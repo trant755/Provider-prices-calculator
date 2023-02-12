@@ -1,0 +1,83 @@
+                <input
+                  id="storSliderValue"
+                  type="number"
+                  name="storSliderValue"
+                  value="0"
+                  min="0"
+                  max="1000"
+                />
+                GB
+              </p>
+            </div>
+            <div id="storSlider"></div>
+          </div>
+          <div class="slider">
+            <div class="slider_labale">
+              <p>Transfer:</p>
+              <p>
+                <input
+                  id="transSliderValue"
+                  type="number"
+                  name="transSliderValue"
+                  value="0"
+                  min="0"
+                  max="1000"
+                />
+                GB
+              </p>
+            </div>
+            <div id="transSlider"></div>
+          </div>
+        </div>
+      </div>
+      <div class="providers">
+        <canvas id="pricesChart" class="providers__chart"></canvas>
+        <ul class="providers__list">
+          <li class="provider">
+            <p class="provider__name">backblaze</p>
+          </li>
+          <li class="provider">
+            <p class="provider__name">bunny</p>
+            <div class="provider__types">
+              <label>
+                <input type="radio" name="bunnyStorOpt" value="hdd" checked />
+                HDD
+              </label>
+              <label>
+                <input type="radio" name="bunnyStorOpt" value="ssd" />
+                SSD
+              </label>
+            </div>
+          </li>
+          <li class="provider">
+            <p class="provider__name">scaleway</p>
+            <div class="provider__types">
+              <label>
+                <input
+                  type="radio"
+                  name="scalewayStorOpt"
+                  value="multi"
+                  checked
+                />
+                Multi
+              </label>
+              <label>
+                <input type="radio" name="scalewayStorOpt" value="single" />
+                Single
+              </label>
+            </div>
+          </li>
+          <li class="provider">
+            <p class="provider__name">vultr</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
