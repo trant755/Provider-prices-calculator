@@ -35,6 +35,7 @@ storSliderValue.addEventListener("input", (e) => {
   } else {
     storSliderValue.removeAttribute("style");
   }
+  storSlider.noUiSlider.set(value);
   priceCalc.storSizeValue = value;
   priceCalc.calculate();
 });
@@ -69,6 +70,7 @@ transSliderValue.addEventListener("input", (e) => {
   } else {
     transSliderValue.removeAttribute("style");
   }
+  transSlider.noUiSlider.set(value);
   priceCalc.transSizeValue = value;
   priceCalc.calculate();
 });
