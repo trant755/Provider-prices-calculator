@@ -53,7 +53,7 @@ noUiSlider.create(transSlider, {
 transSlider.noUiSlider.on(
   "update",
   _.throttle(function (values, handle) {
-    transSliderValue.textContent = Number(values[handle]) + " GB";
+    transSliderValue.value = Number(values[handle]);
     priceCalc.transSizeValue = Number(values[handle]);
     priceCalc.calculate();
   }, 200)
